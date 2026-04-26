@@ -82,7 +82,8 @@ const teamMembers: Team[] = [
       "Spinalex (Finsas)",
       "Horizontal Balance sheet (Liabilities & Equity)",
     ],
-    description: "",
+    description:
+      "Code of ethics and professional conduct focuses on applying key ethical principles such as integrity, transparency, and accountability to ensure responsible decision-making within the company. Corporate social responsibility highlights the company’s role in society by evaluating its environmental, social, and economic impact while balancing profitability with ethical practices. The analysis of Spinalex and Arap Polvara provides a clear view of their financial performance by examining key statements and identifying major trends and changes over time. Horizontal balance sheet analysis (liabilities and equity) compares financial data across different periods to track growth, detect fluctuations, and understand how the companies’ financial positions have evolved.",
   },
   {
     id: "840112",
@@ -96,8 +97,8 @@ const teamMembers: Team[] = [
       "This section evaluates the corporate governance of both companies by analyzing the Board of Directors structure, level of independence, and the role of the Audit Committee. It also reviews the effectiveness of internal control systems and how each company manages risks to ensure stability and protect its assets. <br/> This section presents a vertical analysis of the income statement, where net sales are taken as 100%, and all other items are expressed as a percentage of it. The aim is to assess the cost structure and compare how efficiently each company manages its costs and generates profit.",
   },
   {
-    id: "840003",
-    name: "Akram Nadil ",
+    id: "840008",
+    name: "Akram Nabil",
     image: "/akram.jpeg",
     role: [
       "Team Leader",
@@ -219,7 +220,7 @@ export default function Team() {
                     </div>
                   </div>
                 </DialogTrigger>
-                <DialogContent className="bg-background/80 overflow-hidden rounded-2xl border p-0 md:min-w-2xl">
+                <DialogContent className="bg-background/80 max-h-[80vh] overflow-hidden rounded-2xl border p-0 md:min-w-2xl">
                   {/* Hidden for accessibility */}
                   <VisuallyHidden>
                     <DialogHeader>
@@ -252,7 +253,7 @@ export default function Team() {
                       initial={{ opacity: 0, x: 40 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.4, delay: 0.1 }}
-                      className="flex-1 p-6 md:w-1/2 md:p-8"
+                      className="h-full max-h-42 overflow-y-scroll p-6 md:h-auto md:max-h-full md:w-1/2 md:flex-1 md:overflow-auto md:p-8"
                     >
                       <h3 className="font-playfair text-2xl leading-tight font-semibold md:text-3xl">
                         {member.name}
@@ -280,7 +281,7 @@ export default function Team() {
 
                       {/* Description */}
                       <div
-                        className="text-muted-foreground mt-5 max-h-40 overflow-scroll text-sm leading-relaxed md:max-h-full md:overflow-auto"
+                        className="text-muted-foreground mt-5 text-sm leading-relaxed"
                         dangerouslySetInnerHTML={{
                           __html: member.description,
                         }}
