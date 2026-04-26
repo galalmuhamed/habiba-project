@@ -48,7 +48,7 @@ const teamMembers: Team[] = [
       "An overview provides a clear and concise snapshot of the company or report, highlighting the most important insights such as financial performance, operational efficiency, and overall position, allowing the reader to quickly grasp the big picture before diving into details. Horizontal analysis, on the other hand, is a financial evaluation technique that compares line items in financial statements across multiple periods to identify trends, measure growth or decline, and assess how the company’s performance evolves over time.",
   },
   {
-    id: "840015",
+    id: "840014",
     name: "Jody Sameh",
     image: "/jody.jpeg",
     role: [
@@ -81,9 +81,11 @@ const teamMembers: Team[] = [
       "Corporate social responsibility",
       "Spinalex (Finsas)",
       "Horizontal Balance sheet (Liabilities & Equity)",
+      "Horizontal Analysis",
     ],
+
     description:
-      "Code of ethics and professional conduct focuses on applying key ethical principles such as integrity, transparency, and accountability to ensure responsible decision-making within the company. Corporate social responsibility highlights the company’s role in society by evaluating its environmental, social, and economic impact while balancing profitability with ethical practices. The analysis of Spinalex and Arap Polvara provides a clear view of their financial performance by examining key statements and identifying major trends and changes over time. Horizontal balance sheet analysis (liabilities and equity) compares financial data across different periods to track growth, detect fluctuations, and understand how the companies’ financial positions have evolved.",
+      "Code of ethics and professional conduct sfocuses on applying key ethical principles such as integrity, transparency, and accountability to ensure responsible decision-making within the company. Corporate social responsibility highlights the company’s role in society by evaluating its environmental, social, and economic impact while balancing profitability with ethical practices. The analysis of Spinalex and Arap Polvara provides a clear view of their financial performance by examining key statements and identifying major trends and changes over time. Horizontal balance sheet analysis (liabilities and equity) compares financial data across different periods to track growth, detect fluctuations, and understand how the companies’ financial positions have evolved.",
   },
   {
     id: "840112",
@@ -297,47 +299,3 @@ export default function Team() {
     </section>
   );
 }
-/*
-      <span className="bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent">
-            Meet the Team
-          </span>
-*/
-
-/*
- <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.05 }}
-              viewport={{ once: true }}
-              className={cn("bg-card relative rounded-2xl p-3 shadow-md")}
-            >
-              <Dialog>
-                <DialogTrigger asChild>
-                  <div className="relative aspect-square w-full">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      width={400}
-                      height={400}
-                      className="-z-20 aspect-square w-full rounded-lg object-cover"
-                    />
-                    <div className="absolute inset-0 z-1 rounded-lg bg-linear-to-t from-black via-black/30 to-transparent" />
-                    {/* Info 
-                    <div className="absolute bottom-4 left-4 z-10 text-white">
-                      <h3 className="text-lg font-semibold">{member.name}</h3>
-                    </div>
-                  </div>
-                </DialogTrigger>
-                <DialogContent>
-                  <DialogHeader>
-                    <DialogTitle>Are you absolutely sure?</DialogTitle>
-                    <DialogDescription>
-                      This action cannot be undone. This will permanently delete
-                      your account and remove your data from our servers.
-                    </DialogDescription>
-                  </DialogHeader>
-                </DialogContent>
-              </Dialog>
-            </motion.div>
-*/

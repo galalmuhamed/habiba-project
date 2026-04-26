@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import FinalSection from "@/components/final";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import { Spotlight } from "@/components/spotlight";
 import Supervisor from "@/components/supervisor";
@@ -29,13 +30,7 @@ export default function Home() {
       <About />
       <Team />
       <FinalSection />
-      <footer className="bg-background/80 border-t">
-        <div className="text-muted-foreground container flex flex-col items-center gap-4 py-6 text-center text-sm">
-          <p>
-            &copy; {new Date().getFullYear()} made with love ❤️ by Habiba Galal.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
