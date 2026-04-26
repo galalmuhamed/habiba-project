@@ -29,6 +29,13 @@ export default function Home() {
       <About />
       <Team />
       <FinalSection />
+      <footer className="bg-background/80 border-t">
+        <div className="text-muted-foreground container flex flex-col items-center gap-4 py-6 text-center text-sm">
+          <p>
+            &copy; {new Date().getFullYear()} made with love ❤️ by Habiba Galal.
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }
